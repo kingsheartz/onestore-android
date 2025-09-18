@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
+    namespace "com.example.onestore"
     compileSdkVersion 30
-    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.example.onestore"
         minSdkVersion 26
-        targetSdkVersion 26
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 

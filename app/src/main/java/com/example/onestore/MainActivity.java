@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         // Line of Code for opening links in app
         webView.setWebViewClient(new IgnoreSSLErrorWebViewClient());
-        webView.loadUrl("https://www.one-store.ml/");
+        webView.loadUrl("https://onestore.free.nf/");
 
         webView.setWebViewClient(new WebViewClient() {
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
