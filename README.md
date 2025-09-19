@@ -73,3 +73,14 @@ From the project root:
 
 ```bash
 ./gradlew clean build
+```
+
+---
+
+## 🚀 Building Release
+
+From the project root:
+
+```bash
+./gradlew assembleRelease
+```

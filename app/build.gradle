@@ -4,20 +4,31 @@ plugins {
 
 android {
     namespace "com.example.onestore"
-    compileSdkVersion 30
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.example.onestore"
         minSdkVersion 26
-        targetSdk 34
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        release {
+            storeFile file(".\\keystore\\keystore.jks")
+            storePassword "onestore"
+            keyAlias "key0"
+            keyPassword "onestore"
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig signingConfigs.release
+            shrinkResources false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
